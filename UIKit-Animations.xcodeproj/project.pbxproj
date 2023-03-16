@@ -14,6 +14,12 @@
 		400793AD29BBDA0F007E495D /* AnimationsTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400793AC29BBDA0F007E495D /* AnimationsTabController.swift */; };
 		400793AF29BBDAB6007E495D /* SampleAnimationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400793AE29BBDAB6007E495D /* SampleAnimationsController.swift */; };
 		400793B129BBDAD2007E495D /* ConstraintsAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400793B029BBDAD2007E495D /* ConstraintsAnimationController.swift */; };
+		400793B329BBED80007E495D /* SampleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400793B229BBED80007E495D /* SampleAnimationView.swift */; };
+		400793B529BC08C1007E495D /* ConstraintsAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400793B429BC08C1007E495D /* ConstraintsAnimation.storyboard */; };
+		401D1EF629C3A3F60000A18B /* TransitionAnimationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401D1EF529C3A3F60000A18B /* TransitionAnimationsController.swift */; };
+		401D1EF829C3A4080000A18B /* TransitionAnimations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401D1EF729C3A4080000A18B /* TransitionAnimations.storyboard */; };
+		401D1EFA29C3B5DA0000A18B /* PropertyAnimatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401D1EF929C3B5DA0000A18B /* PropertyAnimatorController.swift */; };
+		401D1EFC29C3B5E00000A18B /* PropertyAnimator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401D1EFB29C3B5E00000A18B /* PropertyAnimator.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		400793AC29BBDA0F007E495D /* AnimationsTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsTabController.swift; sourceTree = "<group>"; };
 		400793AE29BBDAB6007E495D /* SampleAnimationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimationsController.swift; sourceTree = "<group>"; };
 		400793B029BBDAD2007E495D /* ConstraintsAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsAnimationController.swift; sourceTree = "<group>"; };
+		400793B229BBED80007E495D /* SampleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimationView.swift; sourceTree = "<group>"; };
+		400793B429BC08C1007E495D /* ConstraintsAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConstraintsAnimation.storyboard; sourceTree = "<group>"; };
+		401D1EF529C3A3F60000A18B /* TransitionAnimationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimationsController.swift; sourceTree = "<group>"; };
+		401D1EF729C3A4080000A18B /* TransitionAnimations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransitionAnimations.storyboard; sourceTree = "<group>"; };
+		401D1EF929C3B5DA0000A18B /* PropertyAnimatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimatorController.swift; sourceTree = "<group>"; };
+		401D1EFB29C3B5E00000A18B /* PropertyAnimator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PropertyAnimator.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +72,36 @@
 			children = (
 				4007939829BBD596007E495D /* AppDelegate.swift */,
 				4007939A29BBD596007E495D /* SceneDelegate.swift */,
-				400793AC29BBDA0F007E495D /* AnimationsTabController.swift */,
-				400793AE29BBDAB6007E495D /* SampleAnimationsController.swift */,
-				400793B029BBDAD2007E495D /* ConstraintsAnimationController.swift */,
-				400793A129BBD597007E495D /* Assets.xcassets */,
+				401D1EF329C3A3B20000A18B /* Controllers */,
+				401D1EF429C3A3BF0000A18B /* Views */,
+				400793B429BC08C1007E495D /* ConstraintsAnimation.storyboard */,
+				401D1EFB29C3B5E00000A18B /* PropertyAnimator.storyboard */,
+				401D1EF729C3A4080000A18B /* TransitionAnimations.storyboard */,
 				400793A329BBD597007E495D /* LaunchScreen.storyboard */,
+				400793A129BBD597007E495D /* Assets.xcassets */,
 				400793A629BBD597007E495D /* Info.plist */,
 			);
 			path = "UIKit-Animations";
+			sourceTree = "<group>";
+		};
+		401D1EF329C3A3B20000A18B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				400793AC29BBDA0F007E495D /* AnimationsTabController.swift */,
+				400793AE29BBDAB6007E495D /* SampleAnimationsController.swift */,
+				400793B029BBDAD2007E495D /* ConstraintsAnimationController.swift */,
+				401D1EF929C3B5DA0000A18B /* PropertyAnimatorController.swift */,
+				401D1EF529C3A3F60000A18B /* TransitionAnimationsController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		401D1EF429C3A3BF0000A18B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				400793B229BBED80007E495D /* SampleAnimationView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +162,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401D1EF829C3A4080000A18B /* TransitionAnimations.storyboard in Resources */,
 				400793A529BBD597007E495D /* LaunchScreen.storyboard in Resources */,
+				401D1EFC29C3B5E00000A18B /* PropertyAnimator.storyboard in Resources */,
 				400793A229BBD597007E495D /* Assets.xcassets in Resources */,
+				400793B529BC08C1007E495D /* ConstraintsAnimation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +178,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				400793B129BBDAD2007E495D /* ConstraintsAnimationController.swift in Sources */,
+				400793B329BBED80007E495D /* SampleAnimationView.swift in Sources */,
 				400793AF29BBDAB6007E495D /* SampleAnimationsController.swift in Sources */,
 				4007939929BBD596007E495D /* AppDelegate.swift in Sources */,
 				400793AD29BBDA0F007E495D /* AnimationsTabController.swift in Sources */,
 				4007939B29BBD596007E495D /* SceneDelegate.swift in Sources */,
+				401D1EFA29C3B5DA0000A18B /* PropertyAnimatorController.swift in Sources */,
+				401D1EF629C3A3F60000A18B /* TransitionAnimationsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +330,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +358,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
